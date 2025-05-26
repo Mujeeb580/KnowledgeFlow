@@ -1,0 +1,126 @@
+/* course.css */
+
+:root {
+  --primary-color: #003366;
+  --accent-color: #0055aa;
+  --bg-color: #f4f7fb;
+  --card-bg: #ffffff;
+  --shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  --radius: 10px;
+  --font: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Base */
+body {
+  font-family: var(--font);
+  background-color: var(--bg-color);
+  margin: 0;
+  padding: 0;
+  color: #333;
+}
+
+nav {
+  background-color: var(--primary-color);
+  padding: 12px 24px;
+  display: flex;
+  gap: 24px;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  transition: opacity 0.2s;
+}
+
+nav a:hover {
+  text-decoration: underline;
+  opacity: 0.85;
+}
+
+/* Container */
+.container {
+  max-width: 960px;
+  margin: 30px auto;
+  padding: 0 20px;
+}
+
+h2 {
+  text-align: center;
+  color: var(--primary-color);
+  margin-bottom: 32px;
+}
+
+/* Weekly Cards */
+.week-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+  gap: 16px;
+  margin-bottom: 40px;
+}
+
+.week-card {
+  background-color: var(--card-bg);
+  border-radius: var(--radius);
+  padding: 20px 0;
+  text-align: center;
+  box-shadow: var(--shadow);
+  font-weight: bold;
+  color: var(--primary-color);
+  transition: transform 0.2s;
+}
+
+.week-card:hover {
+  transform: translateY(-4px);
+}
+
+/* Learning Material */
+.material-section {
+  background: var(--card-bg);
+  padding: 28px 32px;
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+}
+
+.material-section h3 {
+  color: var(--primary-color);
+  margin-top: 0;
+  margin-bottom: 16px;
+}
+
+.material-section ul {
+  list-style: disc inside;
+  padding-left: 0;
+  margin: 0;
+}
+
+.material-section ul li {
+  margin-bottom: 14px;
+  font-size: 15px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+/* Buttons */
+button.action-btn {
+  background-color: var(--accent-color);
+  border: none;
+  color: white;
+  padding: 6px 12px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: background-color 0.3s ease;
+}
+
+button.action-btn:hover {
+  background-color: #003f7f;
+}
+
+input[type="file"] {
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 4px 6px;
+  font-size: 14px;
+}

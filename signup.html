@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" href="images/favicon.png" />
+  <title>Sign up</title>
+  <!-- Link to the external CSS file -->
+ <link rel="stylesheet" href="css/common.css" />
+ <link rel="stylesheet" href="css/signup.css">
+</head>
+<body>
+
+  <div class="container">
+    <h2>Sign up</h2>
+
+    <form action="/submit_signup" method="POST">
+      <label for="name">Name:</label><br>
+      <input type="text" id="name" name="name"  placeholder="Enter your name" required><br>
+
+      <label for="email">Email:</label><br>
+      <input type="email" id="email" name="email" placeholder="abc@gmail.com" required><br>
+
+      <label for="password">Password:</label><br>
+      <input type="password" id="password" name="password" placeholder="Minimum 8 characters" required><br>
+
+      <label for="confirm_password">Confirm Password:</label><br>
+      <input type="password" id="confirm_password" name="confirm_password" placeholder="Enter password again" required><br>
+	   <label style="display: flex; align-items: center; font-size: 14px;">
+    <input type="checkbox" name="remember" style="margin-right: 8px;">
+    Remember Me
+  </label><br>
+       <!-- For Dummy Purpose -->
+     <button type="button" onclick="window.location.href='index.html'">Sign Up</button>
+	  
+	  <p>Already have an account? <a href="index.html">login</a></p>
+	  
+    </form>
+  </div>
+
+</body>
+</html>

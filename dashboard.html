@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>KnowledgeFlow Dashboard</title>
+  <link rel="stylesheet" href="css/dashboard.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+   <link rel="icon" type="image/png" href="images/favicon.png" />
+</head>
+<body>
+
+  <div class="navbar">
+  <div class="logo">KnowledgeFlow</div>
+  <ul class="nav-links">
+    <li><a href="dashboard.html"><i class="fas fa-home"></i> Home</a></li>
+    <li><a href="my_courses.html"><i class="fas fa-book"></i> Courses</a></li>
+    <li><a href="assignments.html"><i class="fas fa-tasks"></i> Assignments</a></li>
+    <li><a href="#"><i class="fas fa-user"></i> Profile</a></li>
+  </ul>
+  <div class="profile-dropdown">
+    <img src="https://cdn-icons-png.flaticon.com/512/3135/3135715.png" alt="Profile" class="profile-icon">
+    <div class="dropdown-content">
+      <a href="index.html">Sign Out</a>
+    </div>
+  </div>
+</div>
+
+
+  <div class="dashboard-container">
+    <div class="welcome-section">
+      <h1>Welcome back, Student!</h1>
+      <p>Here's what's happening today.</p>
+    </div>
+
+    <div class="cards">
+      <div class="card">
+        <img src="https://cdn-icons-png.flaticon.com/512/2921/2921222.png" alt="Course Icon">
+        <h3>Courses</h3>
+        <p>View your enrolled courses.</p>
+        <a href="my_courses.html"><button>Go</button></a>
+      </div>
+      <div class="card">
+        <img src="https://cdn-icons-png.flaticon.com/512/1907/1907555.png" alt="Assignments Icon">
+        <h3>Assignments</h3>
+        <p>Submit or review assignments.</p>
+        <a href="assignments.html"><button>Go</button></a>
+      </div>
+      <div class="card">
+        <img src="https://cdn-icons-png.flaticon.com/512/1077/1077012.png" alt="Profile Icon">
+        <h3>Profile</h3>
+        <p>Manage your personal info.</p>
+        <button>Go</button> <!-- No link here -->
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>

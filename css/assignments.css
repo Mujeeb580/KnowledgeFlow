@@ -1,0 +1,84 @@
+/* assignments.css */
+
+:root {
+  --primary-color: #003366;
+  --accent-color: #0055aa;
+  --text-color: #333;
+  --bg-color: #f4f7fb;
+  --card-bg: #ffffff;
+  --shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  --radius: 10px;
+  --transition: 0.3s ease;
+  --font: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Page background */
+body {
+  margin: 0;
+  padding: 20px;
+  font-family: var(--font);
+  background-color: var(--bg-color);
+  color: var(--text-color);
+}
+
+/* Assignment card */
+.assignment-card {
+  background-color: var(--card-bg);
+  border-radius: var(--radius);
+  padding: 24px 28px;
+  box-shadow: var(--shadow);
+  margin-bottom: 25px;
+  transition: transform 0.2s ease, box-shadow 0.3s ease;
+  animation: fadeSlideUp 0.6s ease;
+}
+
+.assignment-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.12);
+}
+
+.assignment-card h3 {
+  margin-top: 0;
+  font-size: 20px;
+  color: var(--primary-color);
+}
+
+.assignment-card p {
+  margin: 10px 0;
+  font-size: 15px;
+  color: var(--text-color);
+}
+
+/* Status badge styles */
+.badge {
+  display: inline-block;
+  padding: 6px 14px;
+  font-size: 13px;
+  font-weight: 600;
+  border-radius: 20px;
+  margin-bottom: 12px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.badge.pending {
+  background-color: #ffc107;
+  color: #fff;
+}
+
+.badge.submitted {
+  background-color: #28a745;
+  color: #fff;
+}
+
+/* Animation */
+@keyframes fadeSlideUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
